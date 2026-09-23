@@ -3,8 +3,8 @@
 Statistical significance for four conversion metrics across four A/B tests,
 with segment breakdowns and correction for multiple comparisons.
 
-# TBD
 **[Dashboard](link)**
+TBD
 
 ## Method
 1.  **Overall, per test.** Each metric is compared between test groups with a two-proportion z-test (α = 0.05, two-sided). No correction is applied at this level. The four metrics are funnel stages of the same test
