@@ -5,7 +5,7 @@ with segment breakdowns and correction for multiple comparisons.
 
 [Tableau Dashboard](https://public.tableau.com/views/ABTestSignificance_17902127305650/ABSignificanceAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-## Method
+## Significance Calculation Method
 1.  **Overall, per test.** Each metric is compared between test groups with a two-proportion z-test (α = 0.05, two-sided). No correction is applied at this level. The four metrics are funnel stages of the same test
 
 2. **Segments.** The same calculation per test, broken down by segment. A segment is tested only if each group has at least 10 conversions and 10 non-conversions – the success-failure condition for the z-test. Below that, p-values are unreliable, so the segment is marked `is_testable = False` and gets no verdict.
